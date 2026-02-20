@@ -1,0 +1,424 @@
+<!-- web sites
+ 
+16 bookmyshow
+17 district
+19 pvr 
+20 
+21 
+22 
+23 gmail 
+24 
+15 google photos
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bookmark</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .upar {
+            height: 100px;
+            width: 100%;
+            background-color: #1e293b;
+            display: flex;
+            justify-content: center;
+            color: #ffffff;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-bottom: 1px solid #334155;
+        }
+
+        .upar h1 {
+            font-weight: 300;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+
+        .box-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+            /* margin-top: 40px; */
+            padding: 40px;
+            justify-items: center;
+            align-items: center;
+            justify-content: center;
+            align-items: center;
+            background-color: #0f172a;
+
+        }
+
+        .box {
+            height: 224px;
+            width: 399px;
+            background-color: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 15px;
+            /* display: flex;
+            /* flex-direction: row; */
+            /* justify-content: center; */
+            transition: width 0.1s, height 0.1s, background-color1s;
+
+        }
+
+        .box:hover {
+            width: 405px;
+            height: 224px;
+            background-color: #3063ab;
+        }
+
+
+        .img-div {
+            height: 80%;
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* background-image: url(yt.png); */
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+            background-color: #334155;
+            border-bottom: 1px solid #334155;
+
+        }
+
+        #a1 {
+            background-image: url(yt.png);
+
+        }
+
+        #a2 {
+            background-image: url(insta.png);
+
+        }
+
+        #a3 {
+            background-image: url(gmail.png);
+
+        }
+
+        #a4 {
+            background-image: url(whatapp.png);
+
+        }
+
+        #a5 {
+            background-image: url(linkdin.png);
+
+        }
+
+        #a6 {
+            background-image: url(fast.png);
+
+        }
+
+        #a7 {
+            background-image: url(ytmusic.png);
+
+        }
+
+        #a8 {
+            background-image: url(spotify.png);
+
+        }
+
+        #a9 {
+            background-image: url(fonts.png);
+
+        }
+
+        #a10 {
+            background-image: url(hdhub.png);
+
+        }
+
+        #a11 {
+            background-image: url(vega.png);
+
+        }
+
+        #a12 {
+            background-image: url(flipkart.png);
+
+        }
+
+        #a13 {
+            background-image: url(amazon.png);
+
+        }
+
+        #a14 {
+            background-image: url(myntra.png);
+
+        }
+
+        #a15 {
+            background-image: url(jiomart.png);
+
+        }
+
+        #a16 {
+            background-image: url(bookmyshow.png);
+
+        }
+
+        #a17 {
+            background-image: url(district.png);
+
+        }
+
+        #a18 {
+            background-image: url(PVR.png);
+        }
+
+        #a19 {
+            background-image: url(parul.png);
+
+        }
+
+        #a20 {
+            background-image: url(elearing.png);
+        }
+
+        #a21 {
+            background-image: url(quickheal.png);
+
+        }
+
+        #a22 {
+            background-image: url(maps.png);
+        }
+
+        #a23 {
+            background-image: url(photos.png);
+
+        }
+
+        #a24 {
+            background-image: url(angelone.png);
+        }
+
+        #a25 {
+            background-image: url(gpay.png);
+        }
+
+        .text-div {
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 49px;
+            color: #94a3b8;
+            background-color: #1e293b;
+            border-end-end-radius: 15px;
+            border-end-start-radius: 15px;
+            letter-spacing: 0.5px;
+            font-weight: 500;
+        }
+
+        @media (max-width: 600px) {
+            .box-grid {
+                grid-template-columns: 1fr;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="upar">
+            <h1>Bookmarks</h1>
+        </div>
+    </header>
+    <section>
+        <div class="box-grid">
+            <a href="https://www.youtube.com/" target="_blank">
+                <div class="box box1">
+                    <div id="a1" class="img-div">
+                    </div>
+                    <div class="text-div">1 Youtube</div>
+                </div>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <div class="box box2">
+                    <div id="a2" class="img-div">
+                    </div>
+                    <div class="text-div">2 Instagram</div>
+                </div>
+            </a>
+            <a href="https://mail.google.com/mail" target="_blank">
+                <div class="box box3">
+                    <div id="a3" class="img-div">
+                    </div>
+                    <div class="text-div">3 Gmail </div>
+                </div>
+            </a>
+            <a href="https://www.whatsapp.com/" target="_blank">
+                <div class="box box4">
+                    <div id="a4" class="img-div">
+                    </div>
+                    <div class="text-div">4 WhatsApp</div>
+                </div>
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank">
+                <div class="box box5">
+                    <div id="a5" class="img-div">
+                    </div>
+                    <div class="text-div">5 Linkdin</div>
+                </div>
+            </a>
+            <a href="https://fast.com/" target="_blank">
+                <div class="box box6">
+                    <div id="a6" class="img-div">
+                    </div>
+                    <div class="text-div">6 Fast.Com</div>
+                </div>
+            </a>
+            <a href="https://music.youtube.com/" target="_blank">
+                <div class="box box7">
+                    <div id="a7" class="img-div">
+                    </div>
+                    <div class="text-div">7 Yt Music</div>
+                </div>
+            </a>
+            <a href="https://open.spotify.com/" target="_blank">
+                <div class="box box8">
+                    <div id="a8" class="img-div">
+                    </div>
+                    <div class="text-div">8 Spotify</div>
+                </div>
+            </a>
+            <a href="https://fonts.google.com/">
+                <div class="box box9">
+                    <div id="a9" class="img-div">
+                    </div>
+                    <div class="text-div">9 google font</div>
+                </div>
+            </a>
+            <a href="https://hdhub4u.catering/">
+                <div class="box box10">
+                    <div id="a10" class="img-div">
+                    </div>
+                    <div class="text-div">10 HDhub4u</div>
+                </div>
+            </a>
+            <a href="https://vegamoviesj.com.in/">
+                <div class="box box11">
+                    <div id="a11" class="img-div">
+                    </div>
+                    <div class="text-div">11 Vega Movies
+                    </div>
+                </div>
+            </a>
+            <a href="https://www.flipkart.com/">
+                <div class="box box12">
+                    <div id="a12" class="img-div">
+                    </div>
+                    <div class="text-div">12 Flipkart</div>
+                </div>
+            </a>
+            <a href="https://www.amazon.in/?&tag=googhydrabk1-21&ref=pd_sl_5szpgfto9i_e&adgrpid=155259813593&hvpone=&hvptwo=&hvadid=674893540034&hvpos=&hvnetw=g&hvrand=8648880395658514332&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9303772&hvtargid=kwd-64107830&hydadcr=14452_2316413&gad_source=1">
+                <div class="box box13">
+                    <div id="a13" class="img-div">
+                    </div>
+                    <div class="text-div">13 Amazon</div>
+                </div>
+            </a>
+            <a href="https://www.myntra.com/?utm_source=admitad&utm_medium=affiliate&utm_campaign=1967327_d0e8abf3ba0d315b6061979f8db42d4b&admitad_uid=d0e8abf3ba0d315b6061979f8db42d4b&tagtag_uid=d0e8abf3ba0d315b6061979f8db42d4b&gad_source=1&gad_campaignid=23402634195&gbraid=0AAAAA_m-SUjY7ZZwGMyXXiU29IAMzHt-g&gclid=Cj0KCQiA6sjKBhCSARIsAJvYcpNBjIWtj0vB5oWoDsMH4jUA2ywyR0Da9gFLS-_T-WUY8iPjA4aRw84aAmJLEALw_wcB">
+                <div class="box box14">
+                    <div id="a14" class="img-div">
+                    </div>
+                    <div class="text-div">14 Myntra</div>
+                </div>
+            </a>
+            <a href="https://www.jiomart.com/">
+                <div class="box box15">
+                    <div id="a15" class="img-div">
+                    </div>
+                    <div class="text-div">15 Jio Mart</div>
+                </div>
+            </a>
+            <a href="https://bookmyshow.com/">
+                <div class="box box16">
+                    <div id="a16" class="img-div">
+                    </div>
+                    <div class="text-div">16 BookMyShow</div>
+                </div>
+            </a>
+            <a href="https://www.district.in/">
+                <div class="box box17">
+                    <div id="a17" class="img-div">
+                    </div>
+                    <div class="text-div">17 district</div>
+                </div>
+            </a>
+            <a href="https://www.pvrcinemas.com/">
+                <div class="box box18">
+                    <div id="a18" class="img-div">
+                    </div>
+                    <div class="text-div">18 PVR</div>
+                </div>
+            </a>
+            <a href="https://ums.paruluniversity.ac.in/ForgotPassword.aspx">
+                <div class="box box19">
+                    <div id="a19" class="img-div">
+                    </div>
+                    <div class="text-div">19 Parul Lms</div>
+                </div>
+            </a>
+            <a href="https://elearning.paruluniversity.ac.in/">
+                <div class="box box20">
+                    <div id="a20" class="img-div">
+                    </div>
+                    <div class="text-div">20 Elerning</div>
+                </div>
+            </a>
+            <a href="https://lms.quickhealacademy.com/">
+                <div class="box box21">
+                    <div id="a21" class="img-div">
+                    </div>
+                    <div class="text-div">21 QuickHeal lms</div>
+                </div>
+            </a>
+            <a href="https://maps.google.com/">
+                <div class="box box22">
+                    <div id="a22" class="img-div">
+                    </div>
+                    <div class="text-div">22 Google Maps</div>
+                </div>
+            </a>
+            <a href="https://photos.google.com/login">
+                <div class="box box23">
+                    <div id="a23" class="img-div">
+                    </div>
+                    <div class="text-div">23 Google Photos</div>
+                </div>
+            </a>
+            <a href="">
+                <div class="box box24">
+                    <div id="a24" class="img-div">
+                    </div>
+                    <div class="text-div">24 AngelOne</div>
+                </div>
+            </a>
+            <a href="">
+                <div class="box box25">
+                    <div id="a25" class="img-div">
+                    </div>
+                    <div class="text-div">Gpay</div>
+                </div>
+            </a>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,252 @@
+:root {
+    --primary-color: #4f46e5;
+    --secondary-color: #3730a3;
+    --background-color: #f3f4f6;
+    --card-bg: #ffffff;
+    --text-color: #1f2937;
+    --text-muted: #6b7280;
+    --income-color: #2ecc71;
+    --expense-color: #e74c3c;
+    --border-radius: 12px;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+h3 {
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* Balance Section */
+.balance-container {
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 20px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.balance-card h2 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+    color: var(--text-color);
+}
+
+.inc-exp-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.money-card {
+    flex: 1;
+    text-align: center;
+}
+
+.money-card:first-child {
+    border-right: 1px solid #e5e7eb;
+}
+
+.money {
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.money.plus {
+    color: var(--income-color);
+}
+
+.money.minus {
+    color: var(--expense-color);
+}
+
+/* Form Section */
+.add-transaction {
+    margin-bottom: 2rem;
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+.form-control {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: var(--text-muted);
+}
+
+input, select {
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 12px;
+    width: 100%;
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-row .form-control {
+    flex: 1;
+}
+
+.btn {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    box-shadow: var(--shadow);
+    color: #fff;
+    border: 0;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+/* Transactions List */
+.transactions {
+    margin-bottom: 40px;
+}
+
+.list {
+    list-style-type: none;
+}
+
+.list li {
+    background-color: var(--card-bg);
+    box-shadow: var(--shadow);
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border-right: 5px solid transparent;
+    transition: transform 0.2s;
+}
+
+.list li:hover {
+    transform: translateX(2px);
+}
+
+.list li.plus {
+    border-right-color: var(--income-color);
+}
+
+.list li.minus {
+    border-right-color: var(--expense-color);
+}
+
+.transaction-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.transaction-info small {
+    color: var(--text-muted);
+    margin-top: 4px;
+}
+
+.delete-btn {
+    cursor: pointer;
+    background-color: var(--expense-color);
+    border: 0;
+    color: #fff;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    opacity: 0; /* Hidden by default on desktop, detailed interaction can be added */
+    transition: opacity 0.3s;
+    margin-left: 10px;
+}
+
+.list li:hover .delete-btn {
+    opacity: 1;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 0;
+    }
+    
+    .delete-btn {
+        opacity: 1; /* Always show delete button on mobile */
+    }
+    
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+}
